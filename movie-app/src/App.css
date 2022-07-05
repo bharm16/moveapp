@@ -1,0 +1,41 @@
+body {
+	background: #141414;
+	color: #ffffff;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.movie-app > .row {
+  row.margin-right: 0;
+	overflow: inherit ;
+  flex-wrap: wrap;
+
+}
+.image-container {
+	position: relative;
+  flex-wrap: wrap;
+	transition: transform 0.2s;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
