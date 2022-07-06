@@ -34,10 +34,13 @@ const App = () => {
 	return (
 		<div className='container-fluid movie-app'>
 			<div className='row d-flex align-items-start mt-0 mb-0'>
-				<MovieListHeading heading='Movies' />
+				<MovieListHeading heading='MovieBear' />
+				<MovieListHeading heading='Films' />
+				<MovieListHeading heading='Lists' />
+
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className='row'>
+			<div className='grid'>
 				<MovieList
 					movies={movies}
 					favouriteComponent={AddFavourites}
@@ -47,7 +50,7 @@ const App = () => {
 			<div className='row d-flex align-items-start mt-4 mb-4'>
 				<MovieListHeading heading='Favourites' />
 			</div>
-			<div className='row'>
+			<div className='grid'>
 				<MovieList movies={favourites} favouriteComponent={AddFavourites} />
 			</div>
 		</div>
